@@ -1,17 +1,7 @@
-<%-- 
-    Document   : Menu
-    Created on : 23 de fev. de 2026, 15:03:05
-    Author     : Tulio Dias
---%>
+<link rel="stylesheet" href="${pageContext.request.contextPath}/css/estilo.css">
 
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
-</html>
+<nav>
+    <ul>
+        <li><a href="${pageContext.request.contextPath}/index.jsp">HOME</a></li>
+    </ul>
+</nav>
