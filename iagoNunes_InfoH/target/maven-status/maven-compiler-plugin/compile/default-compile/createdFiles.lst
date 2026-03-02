@@ -5,6 +5,7 @@ br\edu\ifsuldeminas\infoh2026\servico\ConfigListener.class
 br\edu\ifsuldeminas\infoh2026\servico\ConverteData.class
 br\edu\ifsuldeminas\infoh2026\JakartaRestConfiguration.class
 br\edu\ifsuldeminas\infoh2026\modelo\dao\RowMapper.class
+br\edu\ifsuldeminas\infoh2026\controlador\CidadeControlador.class
 br\edu\ifsuldeminas\infoh2026\modelo\dao\CidadeDao$CidadeRowMapper.class
 br\edu\ifsuldeminas\infoh2026\modelo\entidade\Cidade.class
 br\edu\ifsuldeminas\infoh2026\modelo\dao\ConnectionFactory.class
