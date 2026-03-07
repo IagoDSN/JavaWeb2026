@@ -48,15 +48,6 @@ Certifique-se de ter instalado:
 
 O servidor **GlassFish** será iniciado automaticamente.
 
----
-
-## 🌍 Acesso à Aplicação
-
-Após executar o projeto, abra no navegador:
-http://localhost:8080/WebApplication1
-
-
----
 
 ## 🚧 Status do Projeto
 
