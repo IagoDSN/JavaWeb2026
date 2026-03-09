@@ -9,5 +9,3 @@
         <li><a href="${pageContext.request.contextPath}/logout.jsp">LOGOUT</a></li>
     </ul>
 </nav>
-    <h1>${URL_BASE}</h1>
-    <h1>${pageContext.request.contextPath}</h1>
