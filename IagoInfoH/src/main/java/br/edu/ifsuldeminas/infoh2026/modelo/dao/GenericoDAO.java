@@ -33,7 +33,7 @@ public class GenericoDAO<T> {
     public  int  getLastId() {
         return lastId;
     }
-    private  ConnectionFactory connectionFactory = ConnectionFactory.getInstance();
+    private  ConnectionFactory connectionFactory = ConnectionFactory.getIntance();
 /*Método para inserir,atualizar e excluir registros no banco de dados. Ele aceita uma string SQL e um número variável 
  de parâmetros que são usados para preencher a consulta. O método trata exceções, gerencia recursos e fornece 
     feedback sobre o sucesso da operação.*/
@@ -41,7 +41,7 @@ public class GenericoDAO<T> {
         Connection con = null;
         PreparedStatement pstmt = null;
         try {
-            con = connectionFactory.getConnection();
+            con = connectionFactory.getConnetion();
             pstmt = con.prepareStatement(comandoSql, PreparedStatement.RETURN_GENERATED_KEYS);
             for (int i = 0; i < parametros.length; i++) {
                 if (parametros[i] instanceof Calendar) {
@@ -94,7 +94,7 @@ public class GenericoDAO<T> {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
-            con = connectionFactory.getConnection();
+            con = connectionFactory.getConnetion();
             pstmt = con.prepareStatement(comandoSql);
             rs = pstmt.executeQuery();
             while (rs.next()) {
@@ -121,7 +121,7 @@ public class GenericoDAO<T> {
         PreparedStatement pstmt = null;
         ResultSet rs = null;
         try {
-            con = connectionFactory.getConnection();
+            con = connectionFactory.getConnetion();
             pstmt = con.prepareStatement(comandoSql);
             for (int i = 0; i < parametros.length; i++) {
                 pstmt.setObject(i + 1, parametros[i]);
