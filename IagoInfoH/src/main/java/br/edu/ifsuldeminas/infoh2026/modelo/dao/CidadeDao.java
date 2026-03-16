@@ -38,7 +38,7 @@ public class CidadeDao extends GenericoDAO<Cidade>{
             Cidade objCidade = new Cidade();
             objCidade.setCodigoCidade(rs.getInt("CODIGO"));
             objCidade.setNomeCidade(rs.getString("NOME"));
-            objCidade.setUfCidade("UF");
+            objCidade.setUfCidade(rs.getString("uf"));
             System.out.println("Mapeando o objeto cidade> "+objCidade.toString());
             return objCidade;
         }
