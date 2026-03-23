@@ -10,15 +10,15 @@ package br.edu.ifsuldeminas.infoh2026.modelo.entidade;
  */
 public class Cidade {
 
-    private Integer codigoCidade;
+    private Integer codCidade;
     private String nomeCidade, ufCidade;
 
-    public Integer getCodigoCidade() {
-        return codigoCidade;
+    public Integer getcodCidade() {
+        return codCidade;
     }
 
-    public void setCodigoCidade(Integer codigoCidade) {
-        this.codigoCidade = codigoCidade;
+    public void setcodCidade(Integer codCidade) {
+        this.codCidade = codCidade;
     }
 
     public String getNomeCidade() {
