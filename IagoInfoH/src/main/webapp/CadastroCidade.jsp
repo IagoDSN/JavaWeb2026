@@ -1,7 +1,7 @@
-<%--
-Document : CadastroCidade
-Created on : 2 de mar de 2026, 14:17:10
-Author : 02338079698
+<%-- 
+    Document   : CadastroCidade
+    Created on : 2 de mar de 2026, 14:17:10
+    Author     : 13410289682
 --%>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -15,21 +15,22 @@ Author : 02338079698
     <body>
         <%@include file="Menu.jsp" %>
         <h1>Hello World!</h1>
-        <form type="hidden" name="cadastro" method="get"
+        <form type="hidden" name="cadastro" method="get" 
               action="${pageContext.request.contextPath}${URL_BASE}/CidadeControlador">
             <input type="hidden" id="opcao" name="opcao" value="${opcao}">
+            <p>${opcao}</p>
             <input type="hidden" name="codCidade" value="${codCidade}">
             <p><label>Cidade:</label> <input type="text" name="nomeCidade" required="" value="${nomeCidade}" size="40"></p>
             <p><label>UF:</label> <input type="text" name="ufCidade" required="" value="${ufCidade}" size="5"></p>
             <input type="submit" value="Salvar" name="Salvar" style="float:left; margin-right: 3px">
         </form>
-
+            
         <form id="cadastroForm" name="cadastro" method="get" action="${pageContext.request.contextPath}${URL_BASE}/CidadeControlador">
             <input type="submit" value="Cancelar" name="btnCancelar">
-            <input type="hidden" name="opcao" value="cancelar">
-
-        </form>
-
+             <input type="hidden" name="opcao" value="cancelar">
+            
+        </form>    
+            
         <h3>${mensagem}</h3>
         <table border="1">
             <c:if test="${not empty cidades}">

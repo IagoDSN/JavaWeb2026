@@ -9,15 +9,14 @@ package br.edu.ifsuldeminas.infoh2026.modelo.entidade;
  * @author Tulio Dias
  */
 public class Cidade {
-
     private Integer codCidade;
     private String nomeCidade, ufCidade;
 
-    public Integer getcodCidade() {
+    public Integer getCodCidade() {
         return codCidade;
     }
 
-    public void setcodCidade(Integer codCidade) {
+    public void setCodCidade(Integer codCidade) {
         this.codCidade = codCidade;
     }
 
@@ -36,8 +35,6 @@ public class Cidade {
     public void setUfCidade(String ufCidade) {
         this.ufCidade = ufCidade;
     }
-    
-    
     
     
 }
